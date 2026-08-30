@@ -4,6 +4,9 @@
 
 char *get_greeting(const char *restrict name)
 {
+  // MEMORY LEAK
+  //char *memLeak = malloc(512);
+  
   if (name == NULL)
   {
     return NULL;
@@ -31,4 +34,16 @@ char *get_greeting(const char *restrict name)
   snprintf(greeting, alloc_size, "Hello, %s!", name);
 
   return greeting;
+}
+
+// Takes in two numbers, returns product of these nums
+int getProduct(int num1, int num2) {
+  int product = num1 * num2;
+  return product;
+}
+
+// Returns an incorrect sum of two nums. It will be one more than the correct sum
+int getIncorrectSum(int num1, int num2) {
+  int incorrectSum = num1 + num2 + 1;
+  return incorrectSum;
 }

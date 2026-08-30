@@ -10,6 +10,17 @@
 
 int main(void)
 {
+    // // Code for testing crash
+    // int crashNum1 = 1;
+    // int *crashNumPointer1;
+
+    // crashNumPointer1 = &crashNum1;
+
+    // crashNumPointer1 = NULL;
+
+    // // Debug build crashes from this null pointer deref, release build doesn't
+    // int crashNum2 = *crashNumPointer1;
+
     char *greeting = get_greeting("World");
     if (greeting) {
         printf("%s\n", greeting);
@@ -17,5 +28,9 @@ int main(void)
     } else {
         printf("Failed to create greeting.\n");
     }
+
+    //MEMORY LEAK
+    //char *memLeak = malloc(512);
+
     return 0;
 }

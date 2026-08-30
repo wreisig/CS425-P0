@@ -10,5 +10,11 @@
  */
 char* get_greeting(const char* restrict name);
 
+// function header for product
+int getProduct(int num1, int num2);
+
+// func header for returning incorrect sum of two nums
+int getIncorrectSum(int num1, int num2);
+
 
 #endif // LAB_H
