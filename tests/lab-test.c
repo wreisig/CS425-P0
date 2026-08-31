@@ -31,10 +31,6 @@ void test_getProduct(void) {
   int num1 = 10;
   int num2 = 15;
 
-  // think this doesnt work
-  // int product = getProduct(NULL, NULL);
-  // TEST_ASSERT_NULL(product);
-
   int product = getProduct(num1, num2);
   // Assert that product is equal to 15 * 10, which is 150
   TEST_ASSERT_EQUAL_INT(150, product);
